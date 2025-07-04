@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>sahil dhanavade - Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Space Mono', monospace;
+    }
+    html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  </style>
+</head>
+
+<body class="bg-black w-full text-white px-6 sm:px-16 py-8" id="home">
+  <!-- Fixed Navbar -->
+  <nav class="fixed top-0 left-0 w-full max-w-screen box-border z-50 bg-black text-white px-4 sm:px-8 py-4 flex justify-between items-center shadow-md overflow-x-hidden">
+    <div class="font-bold text-purple-400">Portfolio</div>
+  
+    <!-- Desktop nav links -->
+    <div class="hidden sm:flex space-x-6 text-sm">
+      <a href="#home" class="hover:underline">Home</a>
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#journey" class="hover:underline">Journey</a>
+      <a href="#skills" class="hover:underline">Skills</a>
+      <a href="#projects" class="hover:underline">Projects</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </div>
+  
+    <!-- Hamburger button (small screens only) -->
+    <button id="nav-toggle" class="sm:hidden focus:outline-none" aria-label="Toggle navigation">
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="18" x2="21" y2="18" />
+      </svg>
+    </button>
+  </nav>  
+  
+  <!-- Vertical nav menu for small screens -->
+  <div id="nav-menu" class="sm:hidden hidden w-full fixed top-14 left-0 bg-black text-white z-40 shadow-md">
+    <div class="flex flex-col divide-y divide-gray-700 text-sm">
+      <a href="#home" class="py-4 px-6 hover:bg-gray-800">Home</a>
+      <a href="#about" class="py-4 px-6 hover:bg-gray-800">About</a>
+      <a href="#journey" class="py-4 px-6 hover:bg-gray-800">Journey</a>
+      <a href="#skills" class="py-4 px-6 hover:bg-gray-800">Skills</a>
+      <a href="#projects" class="py-4 px-6 hover:bg-gray-800">Projects</a>
+      <a href="#contact" class="py-4 px-6 hover:bg-gray-800">Contact</a>
+    </div>
+  </div>
+  
+
+  <!-- Banner -->
+  <div class="pt-8" data-aos="fade-down" data-aos-duration="1000">
+    <img src="./Untitled design.png" alt="banner" class="w-full" />
+  </div>
+
+  <!-- Hero Section -->
+  <section class="grid md:grid-cols-2 gap-10 items-center py-10" data-aos="fade-up" data-aos-duration="1200">
+    <div>
+      <h2 class="text-4xl font-bold leading-snug mb-4">
+        Hi! I’m <br />
+        <span class="text-purple-400">Sahil Dhanavade</span>
+      </h2>
+    </div>
+    <div class="flex justify-center sm:justify-end gap-4 sm:gap-8 mt-2">
+      <!-- GitHub -->
+      <a href="https://github.com/Sahill1408" target="_blank">
+        <button class="bg-zinc-900 p-5 rounded-lg flex flex-col items-center sm:hover:bg-purple-900 transition" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" class="w-8 h-8 filter invert mb-2" />
+          <p>GitHub</p>
+        </button>
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/sahil-dhanavade-938249230/" target="_blank">
+        <button class="bg-zinc-900 p-5 rounded-lg flex flex-col items-center sm:hover:bg-purple-900 transition" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" class="w-8 h-8 filter invert mb-2" />
+          <p>LinkedIn</p>
+        </button>
+      </a>
+    </div>
+  </section>
+
+  <hr class="border-t border-gray-700 my-8" />
+
+  <!-- About Section -->
+  <section class="py-14 scroll-mt-20" id="about" data-aos="fade-right" data-aos-duration="1000">
+  <h2 class="text-2xl font-bold mb-3">About Me</h2>
+  <p class="text-gray-400 max-w-xl text-justify">
+    Software Developer with a strong foundation in system design, problem-solving, and technical support. Skilled in
+    designing and deploying scalable web applications, improving system workflows, and working in cross-functional
+    Agile teams. Committed to learning and staying current with modern tools
+  </p>
+  </section>
+
+  <hr class="border-t border-gray-700 my-8" />
+
+  <section class="py-14 scroll-mt-20" id="journey" data-aos="fade-right" data-aos-duration="1000">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+    <div>
+      <h3 class="text-2xl font-bold mb-3 text-center md:text-left">My Education</h3><br>
+      <div class="relative">
+        <!-- Timeline vertical line -->
+        <div class="absolute left-5 top-0 bottom-0 w-0.5 bg-[#18181b] rounded"></div>
+
+        <div class="space-y-12 pl-12">
+          <!-- Step 1 -->
+          <div class="relative">
+            <div class="absolute -left-9 top-0 w-5 h-5 bg-purple-400 border-4 border-purple-400 rounded-full"></div>
+            <div class="bg-[#18181b] shadow-md rounded-xl p-5">
+              <h4 class="text-lg font-bold text-purple-400">High Secondary (2020 - 2022)</h4>
+              <p class="text-white mt-1">
+                Bharati Vidyapeeth English Medium School, Maharashtra, India.
+              </p>
+              <p class="text-white mt-1 text-opacity-50">
+                CBSE Board - 12 th - 7.8.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="relative">
+            <div class="absolute -left-9 top-0 w-5 h-5 bg-purple-400 border-4 border-purple-400 rounded-full"></div>
+            <div class="bg-[#18181b] shadow-md rounded-xl p-5">
+              <h4 class="text-lg font-bold text-purple-400">Bachelor's of Computer Application (2022 - 2025)</h4>
+              <p class="text-white mt-1">
+                Bharati vidyapeeth University, Pune, Maharashtra, India.
+              </p>
+              <p class="text-white mt-1 text-opacity-50">
+                CGPA - 8.5
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3 class="text-2xl font-bold mb-3 text-center md:text-left">My Experience</h3><br>
+      <div class="relative">
+        <!-- Timeline vertical line -->
+        <div class="absolute left-5 top-0 bottom-0 w-0.5 bg-[#18181b] rounded"></div>
+
+        <div class="space-y-12 pl-12">
+          <!-- Step 1 -->
+          <div class="relative">
+            <div class="absolute -left-9 top-0 w-5 h-5 bg-purple-400 border-4 border-purple-400 rounded-full"></div>
+            <div class="bg-[#18181b] shadow-md rounded-xl p-5">
+              <h4 class="text-lg font-bold text-purple-400">Software Developer (2024)</h4>
+              <p class="text-white mt-1">
+                Bharati vidyapeeth (IMED).
+              </p>
+              <p class="text-white mt-1 text-opacity-50">
+                Web Application for campus event management and student registrations.
+              </p>
+              
+            </div>
+          </div>
+    </div>
+  </section>
+
+  <hr class="border-t border-gray-700 my-8" />
+
+  <!-- Skills Section -->
+  <section class="py-14 scroll-mt-20" id="skills" data-aos="fade-left" data-aos-duration="1000">
+    <h2 class="text-2xl font-bold mb-3">Skills</h2>
+    <p class="text-gray-400 mb-6 max-w-xl">I am familiar and skilled in a variety of programming languages, frameworks, and libraries.</p>
+
+    <h4 class="mt-6 mb-2">Languages</h4>
+    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4" data-aos="fade-up" data-aos-delay="100">
+      <!-- Languages Cards -->
+      <div class="skill-card">Python</div>
+      <div class="skill-card">Java</div>
+      <div class="skill-card">C</div>
+      <div class="skill-card">Javascript</div>
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3</div>
+    </div>
+
+    <h4 class="mt-10 mb-2">Frameworks and Libraries</h4>
+    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4" data-aos="fade-up" data-aos-delay="200">
+      <div class="skill-card">React.js</div>
+      <div class="skill-card">Node.js</div>
+      <div class="skill-card">Express.js</div>
+      <div class="skill-card">Tailwind CSS</div>
+      <div class="skill-card">Bootstrap</div>
+      <div class="skill-card">Flask</div>
+      <div class="skill-card">OpenCV</div>
+      <div class="skill-card">TensorFlow</div>
+      <div class="skill-card">Keras</div>
+      <div class="skill-card">PyTorch</div>
+    </div>
+
+    <h4 class="mt-10 mb-2">Tools</h4>
+    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4" data-aos="fade-up" data-aos-delay="300">
+      <div class="skill-card">AWS</div>
+      <div class="skill-card">Jupyter Notebook</div>
+      <div class="skill-card">VS Code</div>
+      <div class="skill-card">Cursor</div>
+      <div class="skill-card">Git</div>
+      <div class="skill-card">GitHub</div>
+      <div class="skill-card">Postman</div>
+      <div class="skill-card">CI/CD(jenkins)</div>
+      <div class="skill-card">Docker</div>
+    </div>
+
+    <h4 class="mt-10 mb-2">Databases</h4>
+    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4" data-aos="fade-up" data-aos-delay="400">
+      <div class="skill-card">MySQL</div>
+      <div class="skill-card">MongoDB</div>
+      <div class="skill-card">PostgreSQL</div>
+    </div>
+  </section>
+
+  <hr class="border-t border-gray-700 my-8" />
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 bg-black text-white">
+    <div class="container mx-auto px-6">
+      <!-- Title and 'See All' Link -->
+      <div class="flex flex-col md:flex-row justify-between items-center mb-12">
+        <h2 class="text-3xl font-semibold text-center md:text-left w-full md:w-auto mb-4 md:mb-0">
+          Projects
+        </h2>
+        <a href="https://github.com/Sahill1408?tab=repositories" class="text-purple-300 text-sm md:ml-auto">
+          See all →
+        </a>
+      </div>
+  
+      <!-- Grid of Project Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Project Card -->
+        <div class="flex flex-col justify-between h-full p-6 bg-[#130a30] rounded-xl shadow-md transition transform hover:scale-105" data-aos="zoom-in-up" data-aos-delay="100">
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-left">Weather Website</h3>
+            <p class="text-sm text-gray-300 mb-6 text-left">
+              A weather information website that fetches real-time weather data based on user input using a public API. It displays current temperature, weather conditions, humidity, and wind speed with an appealing and responsive design.
+            </p>
+          </div>
+          <a href="https://github.com/Sahill1408/college-projects" class="mt-auto inline-block">
+            <button class="border border-white text-white px-4 py-1 rounded-full text-sm transition sm:hover:bg-violet-900">
+              →
+            </button>
+          </a>
+        </div>
+  
+        <!-- Repeat Cards -->
+        <div class="flex flex-col justify-between h-full p-6 bg-[#130a30] rounded-xl shadow-md transition transform hover:scale-105" data-aos="zoom-in-up" data-aos-delay="200">
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-left">ImaginAI - Text-to-Image generator SaaS</h3>
+            <p class="text-sm text-gray-300 mb-6 text-left">
+              Full Stack Text-to-Image Generator AI SaaS Application built with React JS and the MERN stack, enabling users to generate images from text prompts using the Clipdrop API.
+            </p>
+          </div>
+          <a href="https://github.com/Sahill1408/imaginAI" class="mt-auto inline-block">
+            <button class="border border-white text-white px-4 py-1 rounded-full text-sm transition sm:hover:bg-violet-900">
+              →
+            </button>
+          </a>
+        </div>
+  
+        <div class="flex flex-col justify-between h-full p-6 bg-[#130a30] rounded-xl shadow-md transition transform hover:scale-105" data-aos="zoom-in-up" data-aos-delay="300">
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-left">Kharidari-E-Commerce</h3>
+            <p class="text-sm text-gray-300 mb-6 text-left">
+              Full-stack e-commerce website built with the MERN stack featuring user authentication, product management, shopping cart, admin dashboard, secure Stripe and Razorpay payments, fully responsive and deployed on Vercel.
+            </p>
+          </div>
+          <a href="https://github.com/Sahill1408/Kharidari-E-commerce" class="mt-auto inline-block">
+            <button class="border border-white text-white px-4 py-1 rounded-full text-sm transition sm:hover:bg-violet-900">
+              →
+            </button>
+          </a>
+        </div>
+  
+        <!-- <div class="flex flex-col justify-between h-full p-6 bg-[#130a30] rounded-xl shadow-md transition transform hover:scale-105" data-aos="zoom-in-up" data-aos-delay="400">
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-left">Multi-class Abnormality Detection in VCE</h3>
+            <p class="text-sm text-gray-300 mb-6 text-left">
+              Uses CNN architecture and ensemble learning to identify abnormalities in the vast data generated during Video Capsule Endoscopy (VCE).
+            </p>
+          </div>
+          <a href="https://github.com/Kopika0208/Multi-Class-Abnormality-Detection-in-Video-Capsule-Endoscopy-Images" class="mt-auto inline-block">
+            <button class="border border-white text-white px-4 py-1 rounded-full text-sm transition sm:hover:bg-violet-900">
+              →
+            </button>
+          </a>
+        </div>
+
+        <div class="flex flex-col justify-between h-full p-6 bg-[#130a30] rounded-xl shadow-md transition transform hover:scale-105" data-aos="zoom-in-up" data-aos-delay="400">
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-left">Agentic AI Projects</h3>
+            <p class="text-sm text-gray-300 mb-6 text-left">
+              A collection of hands-on mini agentic AI projects. Each project demonstrates autonomous AI agents capable of reasoning, planning, and using tools to perform tasks—such as writing sales emails, launching products, and more.
+            </p>
+          </div>
+          <a href="https://github.com/Kopika0208/Agentic-AI-Projects" class="mt-auto inline-block">
+            <button class="border border-white text-white px-4 py-1 rounded-full text-sm transition sm:hover:bg-violet-900">
+              →
+            </button>
+          </a>
+        </div>
+
+        <div class="flex flex-col justify-between h-full p-6 bg-[#130a30] rounded-xl shadow-md transition transform hover:scale-105" data-aos="zoom-in-up" data-aos-delay="400">
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-left">EVXpert - EV Companion</h3>
+            <p class="text-sm text-gray-300 mb-6 text-left">
+              EVXpert is an AI-driven companion app designed for EV enthusiasts. It uses machine learning on real-time data obtained from sensors to provide battery health monitoring, predictive maintenance, trip-based battery planning, and advanced bike security.
+            </p>
+          </div>
+          <a href="https://github.com/Kopika0208/EVXpert---EV-Companion" class="mt-auto inline-block">
+            <button class="border border-white text-white px-4 py-1 rounded-full text-sm transition sm:hover:bg-violet-900">
+              →
+            </button>
+          </a>
+        </div> -->
+  
+      </div>
+    </div>
+  </section>
+  
+
+
+  <hr class="border-t border-gray-700 my-8" id="contact"/>
+
+  <!-- Contact -->
+  <section class="relative py-14 bg-black text-white overflow-hidden scroll-mt-20" data-aos="fade-up" data-aos-duration="1000">
+    <img src="./contact.png" alt="Left" class="hidden md:block w-32 absolute left-0 top-1/2 -translate-y-1/2 z-0 transform scale-150" />
+    <img src="./contact.png" alt="Right" class="hidden md:block w-32 absolute right-0 top-1/2 -translate-y-1/2 z-0 transform scale-150" />
+    <div class="relative z-10 flex flex-col items-center justify-center px-4 max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-6">Contact Me</h2>
+      <form class="space-y-4 w-full max-w-md">
+        <input type="email" placeholder="Enter your email address here" class="form-input" />
+        <textarea rows="5" placeholder="Enter your message here" class="form-input"></textarea>
+        <div class="flex justify-center">
+          <button class="px-6 py-2 border border-white rounded-full hover:bg-white hover:text-black transition">Send</button>
+        </div>
+      </form><br><br>
+      <p class="text-sm sm:text-base">Or send a mail to <a href="mailto:sahildhanavade321@gmail.com" class="underline">sahildhanavade321@gmail.com</a></p>
+    </div>
+  </section>
+  <hr class="border-t border-gray-700 my-8" />
+
+  <!-- Connect Section -->
+  <section class="py-14 scroll-mt-20" id="connect" data-aos="fade-up" data-aos-duration="1000">
+    <h2 class="text-2xl font-bold mb-6 text-center">Connect with me</h2>
+    <div class="flex justify-center sm:gap-8 mt-2 gap-4">
+      <!-- Reuse social buttons -->
+      <a href="https://github.com/Sahill1408" target="_blank">
+        <button class="bg-zinc-900 p-5 rounded-lg flex flex-col items-center sm:hover:bg-purple-900 transition" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" class="w-8 h-8 filter invert mb-2" />
+          <p>GitHub</p>
+        </button>
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/sahil-dhanavade-938249230/" target="_blank">
+        <button class="bg-zinc-900 p-5 rounded-lg flex flex-col items-center sm:hover:bg-purple-900 transition" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" class="w-8 h-8 filter invert mb-2" />
+          <p>LinkedIn</p>
+        </button>
+      </a>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 text-sm">
+    © Copyright 2025.
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Initialize AOS
+      AOS.init({
+        once: true,
+        duration: 1000,
+      });
+  
+      // Contact form handler
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const email = e.target.email.value;
+          const message = e.target.message.value;
+  
+          try {
+            const response = await fetch('/contact', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email, message }),
+            });
+  
+            const result = await response.json();
+            document.getElementById('responseMessage').textContent = result.message;
+            e.target.reset();
+          } catch (error) {
+            document.getElementById('responseMessage').textContent = 'Something went wrong.';
+            console.error('Form submission error:', error);
+          }
+        });
+      }
+  
+      // Navbar toggle logic
+      const navToggle = document.getElementById('nav-toggle');
+      const navMenu = document.getElementById('nav-menu');
+  
+      if (navToggle && navMenu) {
+        // Toggle menu on hamburger click
+        navToggle.addEventListener('click', () => {
+          navMenu.classList.toggle('hidden');
+          navMenu.classList.toggle('animate-slide-down');
+        });
+  
+        // Close menu when a nav link is clicked (small screen)
+        navMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            navMenu.classList.add('hidden');
+            navMenu.classList.remove('animate-slide-down');
+          });
+        });
+      }
+    });
+  </script>  
+
+  <!-- Tailwind component styling -->
+  <style>
+    body {
+  overflow-x: hidden;
+}
+    .skill-card {
+      background: #18181b;
+      padding: 1.25rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      font-size: 0.875rem;
+      transition: background 0.3s;
+    }
+    @media (hover: hover) and (min-width: 640px) {
+  .skill-card:hover {
+    background: #59168a;
+  }}
+    .form-input {
+      width: 100%;
+      padding: 0.75rem;
+      background: #18181b;
+      border: 1px solid #3f3f46;
+      border-radius: 0.5rem;
+      color: white;
+    }
+    .project-card {
+      background: #27272a;
+      aspect-ratio: 3 / 2;
+      position: relative;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+  </style>
+</body>
+</html>
